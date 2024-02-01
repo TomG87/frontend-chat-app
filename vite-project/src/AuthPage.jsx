@@ -1,4 +1,4 @@
-const AuthPage =(props) => {
+const AuthPage = (props) => {
   const onSubmit = (e) => {
     e.preventDefault();
     const { value } = e.target[0];
@@ -6,7 +6,7 @@ const AuthPage =(props) => {
   };
 
   return (
-    <div className="background"><
+    <div className="background">
       <form onSubmit={onSubmit} className="form-card">
         <div className="form-title">Welcome 👋</div>
 
@@ -20,7 +20,7 @@ const AuthPage =(props) => {
           </button>
         </div>
       </form>
-      </div>
+    </div>
   );
 };
 
