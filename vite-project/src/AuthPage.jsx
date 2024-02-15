@@ -4,11 +4,10 @@ const AuthPage = (props) => {
   const onSubmit = (e) => {
     e.preventDefault();
     const { value } = e.target[0];
-    axios;
     axios
       .post("http://localhost:3001/authenticate", { username: value })
       .then((r) => props.onAuth({ ...r.data, secret: value }))
-      .catch((e) => console.log("error", e));
+      .catch((e) => console.log("Auth Error", e));
   };
 
   return (
